@@ -1,0 +1,595 @@
+/* Generales */
+.content{
+    padding: 30px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.sticky + .content {
+    padding-top: 90px;
+}
+.hidden{
+    transform: translateX(calc(100% + 20px));
+}
+:root{
+    --background-navlink: rgba(255, 255, 255, 0.1);
+}
+/* Header */
+.bg-header{
+    --bs-bg-opacity:1;
+    background-color:rgba(53,58,64,255)!important;
+}
+.navbar-nav{
+    gap: 15px;
+}
+#navbarHeader > .container-fluid > .navbar-brand{
+    margin-left: 10vh;
+}
+#navbarHeaderLinks{
+    flex-grow: 0;
+    margin-right: 5vw;
+}
+#navbarHeaderLinks > .navbar-nav .nav-link{
+    color: #968f80;
+    border-radius: 8px;
+}
+#navbarHeaderLinks > .navbar-nav .nav-link:hover{
+    color: #d1cfcb;
+}
+.nav-link:hover{
+    background-color: var(--background-navlink);
+}
+#navbarHeaderLinks > .navbar-nav .active{
+    color: white;
+}
+#navbarHeaderLinks > .navbar-nav .active:hover{
+    color: white;
+}
+#navbarHeaderLinks > .navbar-nav .nav-tickets{
+    color: #299c43;
+}
+#navbarHeaderLinks > .navbar-nav .nav-tickets:hover{
+    color: #45da68;
+    cursor: pointer;
+}
+.banner{
+    background-image: url("../multimedia/img/ba1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: brightness(40%);
+    width: 100%;
+}
+#banner-header,
+.banner{
+    height: 700px;
+}
+.banner-text{
+    position: absolute;
+    left: 50vw;
+    bottom: 300px;
+    right: 10vw;
+    color: white;
+    text-align: right;
+}
+.btn-success{
+    background-color: #0e9e2e;
+    border-color: #0e912a!important;
+}
+.btn-success:hover{
+    background-color: #117226!important;
+}
+/* Main */
+#mainCardsTitle{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#cards{
+    margin-bottom: 35px;
+}
+.card{
+    width: 20vw;
+}
+.card > .card-img-top{
+    height: 325px;
+}
+.card-body{
+    width: auto;
+}
+.btn-custom{
+    --bs-btn-padding-y: 0.15rem;
+    --bs-btn-padding-x: 0.40rem;
+    --bs-btn-font-size: 0.750rem;
+}
+.bg-maingrid-text{
+    background-color: #353a40;
+}
+.border-gray{
+    border-color: #979899!important;
+}
+#main-form{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+#btnFormEnviar{
+    width: calc(60% - 2%);
+    --bs-btn-padding-y: 0.375rem;
+    background-color: #96c93e;
+    border-color: #7ca82f!important;
+}
+#btnFormEnviar:hover{
+    background-color: #79aa2b!important;
+    border-color: #72992d!important;
+}
+/* --------------------------  HEADER -------------------------- */
+@media (min-height:1000px) and (max-width:1920px){
+    .banner-text{
+        bottom: 500px;
+    }
+}
+@media screen and (max-width:1350px){
+    .banner-text{
+        position: absolute;
+        left: 50vw;
+        bottom: 280px;
+        right: 10vw;
+        color: white;
+        text-align: right;
+    }
+}
+@media (min-height:1000px) and (max-width:1350px){
+    .banner-text{
+        bottom: 500px;
+    }
+}
+@media screen and (max-width:1024px){
+    #navbarHeader > .container-fluid > .navbar-brand{
+        margin-left: 1rem;
+    }
+}
+@media (min-height:1000px) and (max-width:1050px){
+    .banner-text{
+        bottom: 500px;
+    }
+    .banner-text #bannerMainText{
+        font-size: 18px!important;
+    }
+}
+@media (min-height:600px) and (max-height:700px) and (max-width:1050px){
+    .banner-text{
+        bottom: 0px;
+    }
+}
+@media (height:1368px) and (width:912px){
+    .banner-text{
+        bottom: 700px;
+    }
+@media screen and (max-width:900px){
+    .banner-text{
+        bottom: 150px;
+    }
+    .banner-text #bannerMainText{
+        font-size: 16px!important;
+    }
+}
+}
+@media (min-height:1000px) and (max-width:900px){
+    .banner-text{
+        bottom: 400px;
+    }
+}
+@media (min-height:1000px) and (max-width:850px){
+    .banner-text{
+        bottom: 500px;
+    }
+}
+@media (min-height:1000px) and (max-width:768px){
+    .banner-text{
+        bottom: 500px!important;
+    }
+}
+@media screen and (max-width:768px){
+    .banner-text{
+        bottom: 0;
+        top: 250px;
+        left: 40vw;
+    }
+}
+@media screen and (max-width:700px){
+    .banner-text #bannerMainText{
+        font-size: 15px!important;
+    }
+    #btn-Orador{
+        margin-bottom: 5px;
+    }
+}
+/* @media (min-height:500px) and (max-width:720px){
+    .banner-text{
+        bottom: 0px!important;
+        top: 300px;
+    }
+}
+@media (min-height:1000px) and (max-width:720px){
+    .banner-text{
+        bottom: 0px!important;
+        top: 200px;
+    }
+}
+@media (min-height:500px) and (max-width:300px){
+    .banner-text{
+        bottom: 0px!important;
+        top: 250px;
+    }
+} */
+@media (height:720px) and (width:540px){
+    .banner-text{
+        bottom: 0px!important;
+        top: 200px;
+    }
+}
+@media screen and (max-width:500px){    
+    .banner-text{
+        bottom: 90px;
+        left: 40vw;
+    }
+    .banner-text #bannerMainText{
+        font-size: 14px!important;
+    }
+}
+@media screen and (max-width:768px){
+    .banner-text{
+        bottom: 120px;
+    }
+}
+@media (min-height:890px) and (max-width:500px){    
+    .banner-text{
+        bottom: 150px;
+    }
+}
+@media screen and (max-width:425px){
+    #navbarHeader > .container-fluid > .navbar-brand{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .banner-text{
+        text-align: right;
+        font-size: smaller;
+    }
+    #bannerMainText{
+        font-size: small!important;
+    }
+}
+@media screen and (max-width:400px){
+    .banner-text{
+        left: 35vw;
+    }
+}
+@media screen and (max-width:375px){
+    .banner-text{
+        left: 32vw;
+    }
+}
+@media screen and (max-width:320px){
+    .banner-text{
+        left: 29vw;
+    }
+}
+@media screen and (max-width:300px){
+    .banner-text{
+        left: 25vw;
+    }
+    #textLogoHeader{
+        font-size: 16px;
+    }
+}
+
+/* -------------------------- MAIN -------------------------- */
+@media screen and (max-width:1300px){
+    #btnFormEnviar{
+        --bs-btn-padding-x: 22vw;
+    }
+    #cards .card{
+        width: 25vw;
+    }
+}
+@media screen and (max-width:1200px){
+    #cards{
+        gap: 1rem!important;
+    }
+}
+@media screen and (max-width:1150px){
+    #navbarHeaderLinks .nav-link{
+        font-size: 14px;
+    }
+    #cards .card{
+        width: 30vw;
+    }
+}
+@media screen and (max-width:1082px){
+    #navbarHeaderLinks .nav-link{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:1024px){
+    #btnFormEnviar{
+        --bs-btn-padding-x: 21.6vw;
+    }
+}
+@media screen and (max-width:991px){
+    #cards .card{
+        width: 35vw;
+    }
+    #row-maingrid-col2 p:nth-child(2){
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:900px){
+    #cards .card{
+        width: 38vw;
+    }
+}
+@media screen and (max-width:830px){
+    #row-maingrid > .col-6{
+        width: 100%;
+    }
+    #row-maingrid .img-fluid{
+        height: 375px;
+        width: 100%;
+    }
+    #row-maingrid-col2{
+        height: 300px;
+    }
+    #row-maingrid-col2 p:nth-child(2){
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    #formContactoRowNA,
+    #formContactoRowTA{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #btnFormEnviar{
+        width: calc(75% - 2%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:768px){
+    #cards .card{
+        width: 40vw;
+    }
+    #cards > .card > .card-body > .btn-custom{
+        margin-bottom: 0.5rem;
+    }
+    #cards > .card > .card-body > h5{
+        margin-bottom: 0.2rem;
+    }
+    #cards > .card > .card-body > .card-text{
+        overflow-wrap: break-word;
+    }
+    .modal-content {
+        left: 5.5rem;
+        width: 75vw!important;
+        height: 700px;
+    }
+}
+@media screen and (max-width:700px){
+    #cards .card{
+        width: 44vw;
+    }
+    #formContactoRowNA,
+    #formContactoRowTA{
+        width: 80%;
+    }
+    #btnFormEnviar{
+        width: calc(80% - 2%);
+    }
+}
+@media screen and (max-width:660px){
+    #row-maingrid-col2 p:nth-child(2){
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:660px){
+    #cards .card{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:576px){
+    .modal-content {
+        left: 8vw;
+        width: 85vw!important;
+        height: 700px;
+    }
+}
+@media screen and (max-width:560px){
+    #cards .card{
+        width: 55vw;
+    }
+}
+@media screen and (max-width:500px){
+    #cards .card{
+        width: 60vw;
+    }
+    #row-maingrid .img-fluid{
+        height: 300px;
+    }
+    #row-maingrid-col2{
+        height: 275px;
+    }
+    #row-maingrid-col2 p:nth-child(2){
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:450px){
+    #cards .card{
+        width: 70vw;
+    }
+    #row-maingrid-col2 p:nth-child(1){
+        font-size: 20px!important;
+    }
+    #row-maingrid-col2 p:nth-child(2){
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    #formContactoRowNA,
+    #formContactoRowTA{
+        width: 90%;
+    }
+    #btnFormEnviar{
+        width: calc(90% - 5%);
+    }
+}
+@media screen and (max-width:425px){
+    #cards .card{
+        width: 80vw;
+    }
+    .modal{
+        --bs-modal-width: 500px;
+    }
+    .modal-content {
+        left: 1vw;
+        width: 95vw!important;
+        height: max-content;
+    }
+    #categorias-descuento{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:375px){
+    #cards > .card > .card-body{
+        font-size: 13px;
+    }
+    #row-maingrid-col2{
+        height: 330px;
+    }
+    #categorias-descuento .box-categoria{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:320px){
+    #cards .card{
+        width: 90vw;
+    }
+    #categorias-descuento .box-categoria{
+        width: 60vw;
+    }
+}
+@media screen and (max-width:300px){
+    #cards .card{
+        width: 93vw;
+    }
+    #row-maingrid-col2{
+        height: 350px;
+    }
+}
+/* --------------------------  FOOTER -------------------------- */
+@media screen and (max-width:1024px){
+    #footer-nav > .nav{
+        gap: 1rem !important;
+    }   
+}
+@media screen and (max-width:768px){
+    #footer-nav > .nav{
+        gap: 0rem !important;
+    }
+}
+.modal{
+    --bs-modal-width: 750px;
+}
+.modal-body{
+    padding-bottom: 0px;
+}
+.modal-dialog-scrollable .modal-content {
+    width: 75vw!important;
+    height: 700px;
+}
+.box-categoria{
+    border: 1px solid black;
+    width: 40vw;
+    height: auto;
+}
+.categoria-estudiante{
+    border-color: #007bff;
+}
+.categoria-estudiante:hover{
+    background-color: #a9d3ff;
+    cursor: pointer;
+}
+.categoria-trainee{
+    border-color: #4bb7c8;
+}
+.categoria-trainee:hover{
+    background-color: #cce5ff;
+    cursor: pointer;
+}
+.categoria-junior{
+    border-color: #ffc10a;
+}
+.categoria-junior:hover{
+    background-color: #ffe8a3;
+    cursor: pointer;
+}
+.text-documentacion{
+    font-size: 13px;
+}
+.text-decoration-custom{
+    text-decoration:underline dotted;
+}
+.col-name{
+    padding-right: 0px;
+}
+#valor-final{
+    background-color: #cce5ff;
+    color: #5192e2;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 1vw;
+}
+.background-hidden{
+    filter:brightness(45%);
+}
+#row-maingrid .img-fluid{
+    height: 475px;
+    width: 100%;
+}
+#formContactoRowNA,
+#formContactoRowTA{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#btnScrollTop{
+    cursor: pointer;
+}
+#containerBtnScrollTop{
+    background-color: rgb(255, 53, 53);
+    position: fixed;
+    width: max-content;
+    z-index: 99;
+    right: 1vw;
+    bottom: 8vh;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+#containerBtnScrollTop:hover{
+    background-color: rgb(255, 81, 81);
+    transform: scale(1.1);
+}
+/* Footer */
+#footer-nav{
+    background: rgb(28,54,67);
+    background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,113,1) 100%);
+}
+#footer-nav > .nav > .nav-item > .nav-link{
+    border-radius: 8px;
+}
+#footer-nav > .nav > .nav-item > .nav-link:hover{
+    background-color: var(--background-navlink);
+}

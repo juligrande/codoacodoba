@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Julian Grande - TP Integrador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-header" id="navbarHeader">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="./multimedia/img/codoacodo.png" alt="logo codo a codo" width="95">
+                    <span class="navbar-brand text-white" id="textLogoHeader">Conf Bs As</spans>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeaderLinks" aria-controls="navbarHeaderLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarHeaderLinks">
+                    <div class="navbar-nav fw-semibold">
+                      <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                      <a class="nav-link" href="#cards">Los oradores</a>
+                      <a class="nav-link" href="#main-grid-info">El lugar y la fecha</a>
+                      <a class="nav-link" href="#main-form">Conviértete en orador</a>
+                      <a class="nav-link nav-tickets" data-bs-toggle="modal" data-bs-target="#staticModalTicket">Comprar tickets</a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+        <div class="banner" id="banner-header"></div>
+        <div class="banner-text">
+            <p class="fs-2 fw-semibold">Conf Bs As</p>
+            <p id="bannerMainText" class="fs-5">Llega por primera vez a Argentina un evento para compartir con nuestra comunidad el conocimiento y 
+                experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, 
+                a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. ¡Te esperamos!
+            </p>
+            <button type="button" id="btn-Orador" class="btn btn-outline-light">¡Quiero ser orador!</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticModalTicket">Comprar tickets</button>
+        </div>
+    </header>
+    <main>
+        <section id="main-cards">
+            <article id="mainCardsTitle">
+                <p class="fs-6 text-uppercase lh-base text-center mt-2 mb-0">conoce a los</p>
+                <p class="fs-1 text-uppercase lh-base fw-semibold text-center mt-0 mb-0">oradores</p>
+            </article>
+            <section id="cards" class="d-flex gap-4 justify-content-center flex-wrap">
+                <div class="card">
+                    <img src="./multimedia/img/steve.jpg" class="card-img-top" alt="steve jobs">
+                    <div class="card-body">
+                      <p class="btn btn-outline-secondary btn-custom fw-bolder">Apple</p>
+                      <p class="btn btn-info btn-custom fw-bolder">Software</p>
+                      <h5 class="card-title">Steve Jobs</h5>
+                      <p class="card-text">
+                        Empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor. Fue cofundador y presidente ejecutivo de Apple y, máximo accionista individual de The Walt Disney Company. Responsable de la Macintosh 128k, el primer ordenador personal que se comercializó exitosamente.
+                      </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./multimedia/img/bill.jpg" class="card-img-top" alt="bill gates">
+                    <div class="card-body">
+                      <p class="btn btn-warning btn-custom fw-bolder">Microsoft</p>
+                      <p class="btn btn-primary btn-custom fw-bolder">Software</p>
+                      <h5 class="card-title">Bill Gates</h5>
+                      <p class="card-text">
+                        Magnate empresarial, desarrollador de software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen. Fue uno de los principales empresarios de la revolución de las microcomputadoras de las décadas de 1970 y 1980.
+                      </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./multimedia/img/ada.jpeg" class="card-img-top" alt="ada lovelace">
+                    <div class="card-body">
+                      <p class="btn btn-secondary btn-custom fw-bolder">Matemática</p>
+                      <p class="btn btn-danger btn-custom fw-bolder">Programación</p>
+                      <h5 class="card-title">Ada Lovelace</h5>
+                      <p class="card-text">
+                        Matemática y escritora británica. Fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro y en haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores.
+                      </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="main-grid-info">
+            <section class="container-fluid pt-3 mt-3">
+            <div class="row border-top border-bottom border-2 border-gray" id="row-maingrid">
+                <div class="col-6 ps-0 pe-0">
+                    <div id="honoluluCarrousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./multimedia/img/honolulu.jpg" class="img-fluid" alt="honolulu1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./multimedia/img/honolulu2.jpg" class="img-fluid" alt="honolulu2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./multimedia/img/honolulu3.jpg" class="img-fluid" alt="honolulu3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#honoluluCarrousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#honoluluCarrousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 ps-0 pe-0 bg-maingrid-text text-white border-start border-2 border-gray" id="row-maingrid-col2">
+                  <p class="fs-3 text-capitalize fw-semibold ps-3 pt-3">bs as - octubre</p>
+                  <p class="ps-3 text-md-start me-2">Buenos Aires es la provincia y la localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu 
+                    es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área 
+                    urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado 
+                    consolidada que cubre toda la ciudad (aproximadamente 600km&#178; de superficie).
+                  </p>
+                  <button class="btn btn-outline-light ms-3" id="btnConoceMas">Conocé más</button>
+                </div>
+              </div>
+            </section>
+        </section>
+        <article id="main-form">
+            <div>
+                <p class="fs-6 text-uppercase lh-base text-center mt-2 mb-0">conviértete en un</p>
+                <p class="fs-1 text-uppercase lh-base fw-semibold text-center mt-0 mb-0">orador</p>
+                <p class="fs-6 text-center">Anótate como orador para dar una <a href="#" class="text-reset text-decoration-custom">charla ignite</a>. ¡Cuéntanos de qué quieres hablar!</p>
+            </div>
+            <form id="formContacto">
+                <div class="row justify-content-md-center" id="formContactoRowNA">
+                    <div class="col mb-3">
+                        <input type="text" class="form-control" id="form-text-nombre" placeholder="Ingrese su nombre...">
+                    </div>
+                    <div class="col mb-3">
+                        <input type="text" class="form-control" id="form-text-apellido" placeholder="Ingrese su apellido...">
+                    </div>
+                </div>
+                <div class="row justify-content-md-center" id="formContactoRowTA">
+                    <div class="col">
+                        <textarea class="form-control" id="form-textArea" maxlength="450" rows="4" placeholder="¿Sobre qué quieres hablar?"></textarea>
+                        <p class="text-secondary" style="font-size: 12px">¡Recuerda incluír un título para tu charla!</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-md-center mb-3">
+                    <button id="btnFormEnviar" class="btn btn-success fw-semibold">Enviar</button>
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <section id="footer-nav">
+            <ul class="nav justify-content-center gap-4 pt-3 pb-3">
+                <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="#!">Preguntas frecuentes</a> </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#!">Contáctanos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#!">Prensa</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#!">Conferencias</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#!">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#!">Privacidad</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#!">Estudiantes</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
